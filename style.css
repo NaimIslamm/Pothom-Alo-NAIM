@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* -------Header Section-------- */
+
+.header-container{
+    max-width: 1040px;
+    height: 96px;
+    height: auto;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid rgba(128, 128, 128, 0.596);
+    padding: 15px;
+    
+
+}
+.header-child img{
+    
+    width: 100%;
+    max-width: 50px;
+    display: inline-block;
+    
+}
+.header-child p{
+    font-size: .8em;
+    /* margin-left: 1px; */
+    padding: 10px;
+}
+.header-child:last-child{
+    border-right: 0px solid;
+}
+.header-logo img{
+    width: 100%;
+    max-width: 200px;
+}
+
+/*---------------- NAV SECTION-------------- */
+#main-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1040px;
+    height: 100%;
+    border-bottom: 2px solid gray;
+    border-top: 1px solid rgba(128, 128, 128, 0.372);
+    border-right: 1px solid rgba(128, 128, 128, 0.372);
+    margin: 0 auto;
+    position: sticky;
+    overflow: hidden;
+    cursor: pointer;
+    
+}
+
+.cate-menu ul{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    
+}
+.cate-menu ul li{
+    margin-right: 13px;
+    /* height: 100%; */
+}
+.cate-menu ul li a{
+    /* height: 100%; */
+    text-decoration: none;
+    color: black;
+    font-size: .9em;
+}
+
+
+.icon-menu ul{
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    list-style: none;
+    
+}
+.icon-menu ul li{
+    /* display: block; */
+    /* height: 100%; */
+    margin-right: 13px;
+    
+    
+}
+.icon-menu ul li a{
+    display: block;
+    /* height: 100%; */
+    text-decoration: none;
+    color: black;
+    font-size: .9em;
+    border-left: 1px solid black;
+    padding: 7px;
+}
+.icon-menu ul li:last-child{
+    border-right: 1px solid black;
+}
+
+
+.menu-bar ul{
+    list-style: none;
+    margin-right: 5px;
+}
+
+#main-menu ul li a:hover{   
+    color: #0573e6;
+}
+#main-menu ul li svg:hover{   
+    fill: #0573e6;
+}
+   
+/* ----------Nav Section Ended---------- */
+
+/* -----------Ads Sect0in-------- */
+.top-ads {
+  max-width: 1040px;
+    display: block;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.372);
+}
+.top-ads img{
+    margin: 15px;
+}
+
+/* -------Start Content section----- */
+.main-content{
+    max-width: 1008px;
+    margin: 10px auto;
+}
+.first-content{
+    display: flex;
+    justify-content: center; 
+    gap: 10px;
+    overflow: hidden;
+    /* this padding bottom is for border-bottom gap */
+    padding-bottom: 15px;
+    border-bottom: 1px solid grey;
+   
+}
+.first-image img{
+    width: 100%;
+    transform: scale(1);
+    overflow: hidden;
+}
+.first-image img:hover{
+    transform: scale(1.1);
+    overflow: hidden;
+    transition: transform ease-in .3s;
+}
+
+.child-content{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    border-right: 1px solid rgba(128, 128, 128, 0.372);
+}
+
+.child-content a{  
+    text-decoration: none;
+    color: black;
+    
+}
+.child-content p{
+    font-size: x-small;
+    color: rgb(105, 102, 102);;
+}
+.first-image{
+    overflow: hidden;
+    width: 50%;
+
+}
+.first-details{
+    width: 50%;
+    padding: 0 10px;
+}
+.first-details a {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.first-details h3{
+    
+    font-size: larger;
+    line-height: 30px;
+}
+.first-details h3:hover{
+    color: #0573e6;
+}
+
+.first-details p{
+    color: rgb(105, 102, 102);
+    font-size: small;
+    margin-top: 5px;
+}
+.first-details p:hover{
+    color: black;
+}
+
+.child-sidebar{
+    overflow: hidden;
+    width: 30%;
+}
+.child-sidebar img{
+    width: 100%;
+    transform: scale(1);
+    overflow: hidden;
+}
+.child-sidebar img:hover{
+    transform: scale(1.1);
+    overflow: hidden;
+    transition: transform ease .3s;
+}
+/*---------------- SECOND ROW---------------- */
+/* --------three-coloum-content style------------ */
+.three-coloum-content{
+    max-width: 1008px;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+    padding-bottom: 15px;
+    border-bottom: 1px solid grey;
+
+}
+.coloum{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    border-right: 1px solid gray;
+    padding: 8px;
+}
+.coloum:last-child{
+    border-right: 0px solid;
+}
+
+/* ---if image will not work properly on width=100%, then write overflow: hidden; */
+.coloum img{
+    width: 100%;
+    overflow: hidden;
+    transform: scale(1);
+}
+.coloum img:hover{
+    transform: scale(1.1);
+    transition: transform ease .3s;
+}
+.coloum h4{
+    font-size: .9em;
+    line-height: 1.6em;
+}
+.coloum h4:hover{
+    color: #0573e6;
+}
+/* ---THIRD CONTENT STYLE--- */
+.two-coloum-content{
+    display: flex;
+    justify-content: center;
+    margin: 10px auto ;
+    padding-bottom: 15px;
+    border-bottom: 1px solid grey;
+    
+}
+.details{
+    display: grid;
+    grid-template-columns: repeat(1 1fr);
+    align-items: center;
+    width: 70%;
+}
+.details a{
+    text-decoration: none;
+    color: black;
+
+}
+.details a:hover{
+    color: #0573e6;
+}
+.details-image{
+    width: 30%;
+}
